@@ -8,8 +8,14 @@ vim.opt.number = true
 
 -- indentation
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.autoindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4 -- number of spaces to insert or delete when hitting Tab or Backspace
+vim.opt.expandtab = true -- convert tabs to space
+vim.opt.autoindent = true -- automatically adjust indentation for new lines
+vim.opt.smartindent = true
+vim.opt.smarttab = true
+vim.opt.cindent = true
+vim.opt.copyindent = true
 
 vim.opt.cursorline = true
 
