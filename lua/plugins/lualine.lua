@@ -10,7 +10,19 @@ return {
             },
             sections = {
                 lualine_a = { { "mode", right_padding = 2 } },
-                lualine_b = { "filename", "branch" },
+                lualine_b = {
+                    {
+                        "filename",
+                        path = 1, -- 0 = filename, 1 = relative path, 2 = absolute path, 3 = absolute with ~
+                        shorting_target = 40, -- shorten path if too long
+                        symbols = {
+                            modified = " ●", -- text to show when the file is modified
+                            readonly = " ",
+                            unnamed = "[No Name]",
+                        },
+                    },
+                    "branch",
+                },
                 lualine_c = {
                     "%=", --[[ add your center components here in place of this comment ]]
                 },
