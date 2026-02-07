@@ -31,7 +31,7 @@ return {
             ["<C-j>"] = { "select_next", "fallback" },
             ["<Up>"] = { "select_prev", "fallback" },
             ["<Down>"] = { "select_next", "fallback" },
-            ["<Tab>"] = { "accept", "fallback" },
+            ["<Tab>"] = { "select_and_accept", "fallback" },
             ["<CR>"] = { "accept", "fallback" },
             ["<C-s>"] = { "show_signature", "hide_signature", "fallback" },
         },
