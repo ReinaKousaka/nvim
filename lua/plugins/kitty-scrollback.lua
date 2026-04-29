@@ -18,9 +18,10 @@ return {
             },
             highlight_overrides = {
                 -- Force the scrollback background to match your exact Neovim background
-                KittyScrollbackNvimNormal = { link = "Normal" },
+                KittyScrollbackNvimNormal = { link = "Comment" },
                 -- Force the selection color to match your usual visual mode
                 KittyScrollbackNvimVisual = { link = "Visual" },
+                KittyScrollbackNvimFloatBorder = { link = "FloatBorder" },
             },
         })
     end,

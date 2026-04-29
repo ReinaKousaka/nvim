@@ -36,3 +36,13 @@ vim.opt.list = true
 vim.opt.clipboard:append({ "unnamedplus" })
 
 vim.opt.cursorline = true
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "kitty-scrollback",
+    callback = function()
+        vim.wo.cursorline = true
+        vim.wo.cursorcolumn = true
+        vim.wo.winhighlight =
+            "CursorLine:Visual,CursorColumn:Visual"
+    end,
+})
