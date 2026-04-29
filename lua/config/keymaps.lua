@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "jk", "<Esc>", { silent = true, noremap = true })
+vim.keymap.set("v", "<C-[>", "<Esc>", { silent = true, noremap = true })
 vim.keymap.set("n", "Y", "y$", { desc = "Yank to end of the line" })
 
 vim.g.mapleader = " "
