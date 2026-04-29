@@ -34,3 +34,5 @@ vim.opt.list = true
 
 -- use system clipboard
 vim.opt.clipboard:append({ "unnamedplus" })
+
+vim.opt.cursorline = true

@@ -8,7 +8,7 @@ return {
                 bold_keywords = true,
                 bright_border = true,
                 visual = { theme = "light", blend = 0.95 },
-                cursorline = { theme = "light", blend = 0.5 },
+                cursorline = { theme = "light", blend = 0.95 },
             })
             require("nordic").load()
         end,
